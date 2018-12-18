@@ -54,5 +54,5 @@ end
 
 #strong parameter
 def message_params
-  params.require(:message).params(:content)
+  params.require(:message).permit(:content)
 end
